@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg {
+  height: auto;
+  margin: 0 auto;
+  bottom: 0;
+}
