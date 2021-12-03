@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg {
-  height: auto;
-  margin: 0 auto;
-  bottom: 0;
+  img {
+    min-height: 100vh;
+  }
 }
