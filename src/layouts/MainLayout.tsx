@@ -6,9 +6,8 @@ interface MainLayoutProps {
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="text-white font-mono mb:container mx-auto bg-gray-800 max-h-full text-lg">
+    <div className="text-white font-mono container mx-auto h-full bg-gradient-to-t from-yellow-150 to-indigo-200 text-lg">
       <div>{children}</div>
-      <img src={process.env.PUBLIC_URL + 'bg1.png'} className="bg" alt="bg" />
     </div>
   )
 }

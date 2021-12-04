@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import React from 'react'
 import { Header } from '../components/Header'
 import { MainLayout } from '../layouts/MainLayout'
@@ -7,7 +8,12 @@ export const HomePage = () => {
     <>
       <MainLayout>
         <Header />
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex items-center justify-between">
+        <div
+          className={clsx(
+            'max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex items-center justify-between',
+            'layout-height'
+          )}
+        >
           <h2 className="font-extrabold tracking-widest text-purple-600 text-4xl ">
             <span className="block text-indigo-700 divide-y divide-fuchsia-300">above</span>
             <span className="text-indigo-300 text-xs"> prep. Adverb </span>
@@ -16,6 +22,7 @@ export const HomePage = () => {
           </h2>
         </div>
       </MainLayout>
+      <img src={process.env.PUBLIC_URL + 'bg1.jpg'} className='mx-auto' alt="bg" />
     </>
   )
 }

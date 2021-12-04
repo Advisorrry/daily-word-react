@@ -7,7 +7,7 @@ const about = process.env.PUBLIC_URL + 'about.png'
 
 interface HeaderProps {}
 
-export const Header: React.FC<HeaderProps> = ({}) => {
+export const Header: React.FC<HeaderProps> = () => {
   return (
     <header className="flex justify-between items-center p-2">
       <Link to="/" className={styles.logo}>

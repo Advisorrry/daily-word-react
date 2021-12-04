@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg {
-  img {
-    min-height: 100vh;
-  }
+.layout-height {
+  height: 66.5vh !important;
 }
+
