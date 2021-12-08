@@ -11,20 +11,27 @@ export interface IWords {
 
 export const useWords = () => {
   const [data, setData] = React.useState<IWords[]>([])
-  // const [isLoading, setIsLoading] = React.useState(true)
+  const [isLoading, setIsLoading] = React.useState(true)
   //const [isError, setIsError] = React.useState(false)
 
   React.useEffect(() => {
     const getWords = async () => {
-      const response = await axios.get('http://localhost:3000/db.json')
+      try {
+        const response = await axios.get('http://localhost:3000/db.json')
 
-      const { words } = await response.data
+        const { words } = await response.data
 
-      setData(words)
+        setData(words)
+      } catch (e) {
+        console.log(e)
+      } finally {
+        setIsLoading(false)
+      }
     }
     getWords()
   }, [])
   return {
     data,
+    isLoading
   }
 }
