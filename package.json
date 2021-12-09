@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.2",
+    "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -16,6 +17,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "6",
     "react-scripts": "4.0.3",
+    "redaxios": "^0.4.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
@@ -24,6 +26,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "server": "npx json-server --watch public/db.json --port=3001",
     "lint": "eslint . src config || true",
     "prettify": "prettier --write 'src/**/*.(ts|js)x?$/i'"
   },

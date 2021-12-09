@@ -1,28 +1,19 @@
-import clsx from 'clsx'
 import React from 'react'
 import { Header } from '../components/Header'
+import { WordsList } from '../components/WordsList'
+import { useWords } from '../hooks/useWords'
 import { MainLayout } from '../layouts/MainLayout'
 
-export const HomePage = () => {
+export const HomePage: React.FC = () => {
+  const { data, isLoading } = useWords()
+
   return (
     <>
       <MainLayout>
         <Header />
-        <div
-          className={clsx(
-            'max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex items-center justify-between',
-            'layout-height'
-          )}
-        >
-          <h2 className="font-extrabold tracking-widest text-purple-600 text-4xl ">
-            <span className="block text-indigo-700 divide-y divide-fuchsia-300">above</span>
-            <span className="text-indigo-300 text-xs"> prep. Adverb </span>
-            <span className="text-indigo-400 text-right text-lg"> B1 </span>
-            <span className="bg-green-200 rounded-full py-4 px-2">выше</span>
-          </h2>
-        </div>
+        <WordsList words={data} isLoading={isLoading} />
       </MainLayout>
-      <img src={process.env.PUBLIC_URL + 'bg1.jpg'} className='mx-auto' alt="bg" />
+      <img src={process.env.PUBLIC_URL + 'bg1.jpg'} className="mx-auto container" alt="bg" />
     </>
   )
 }
