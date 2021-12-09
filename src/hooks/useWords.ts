@@ -32,6 +32,6 @@ export const useWords = () => {
   }, [])
   return {
     data,
-    isLoading
+    isLoading,
   }
 }
