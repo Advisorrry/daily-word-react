@@ -3,7 +3,7 @@ import React from 'react'
 import { LoadingSkeleton } from '../LoadingSkeleton'
 
 interface WordsListProps {
-  words: any
+  words: any //поставил any, т.к. TS ведет себе как падла, и попросту не хочет отображать если стоит тип IWords
   isLoading: boolean
   randomNumber: number
 }
