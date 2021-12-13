@@ -1,11 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
+import rootReducer from './slices'
 import { wordsApi } from './wordsApi'
 
 export const store = configureStore({
-  reducer: {
-    [wordsApi.reducerPath]: wordsApi.reducer,
-  },
+  reducer: rootReducer,
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(wordsApi.middleware),
 })
 
