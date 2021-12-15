@@ -12,7 +12,7 @@ export const wordsApi = createApi({
   reducerPath: 'wordsApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/' }),
   endpoints: (builder) => ({
-    getWords: builder.query<IWords, string>({
+    getWords: builder.query<IWords[], string>({
       query: () => ({
         url: 'db.json',
       }),

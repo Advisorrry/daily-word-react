@@ -1,10 +1,10 @@
 import { combineReducers, Reducer } from 'redux'
 import { wordsApi } from '../wordsApi'
 
-import randomNumberSlice from './randomNumber'
+import randomNumberReducer from './randomNumber'
 
 const rootReducer: Reducer = combineReducers({
-  randomNumberSlice,
+  randomNumberState: randomNumberReducer,
   [wordsApi.reducerPath]: wordsApi.reducer,
 })
 
