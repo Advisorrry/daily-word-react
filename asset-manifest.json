@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/daily-word-react/static/css/main.22ed071f.chunk.css",
+    "main.js": "/daily-word-react/static/js/main.376c97b4.chunk.js",
+    "main.js.map": "/daily-word-react/static/js/main.376c97b4.chunk.js.map",
+    "runtime-main.js": "/daily-word-react/static/js/runtime-main.0ef26d6f.js",
+    "runtime-main.js.map": "/daily-word-react/static/js/runtime-main.0ef26d6f.js.map",
+    "static/js/2.4d300250.chunk.js": "/daily-word-react/static/js/2.4d300250.chunk.js",
+    "static/js/2.4d300250.chunk.js.map": "/daily-word-react/static/js/2.4d300250.chunk.js.map",
+    "index.html": "/daily-word-react/index.html",
+    "static/css/main.22ed071f.chunk.css.map": "/daily-word-react/static/css/main.22ed071f.chunk.css.map",
+    "static/js/2.4d300250.chunk.js.LICENSE.txt": "/daily-word-react/static/js/2.4d300250.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ef26d6f.js",
+    "static/js/2.4d300250.chunk.js",
+    "static/css/main.22ed071f.chunk.css",
+    "static/js/main.376c97b4.chunk.js"
+  ]
+}
