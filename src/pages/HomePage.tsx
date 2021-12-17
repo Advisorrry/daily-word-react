@@ -1,6 +1,5 @@
 import React from 'react'
 import { WordsList } from '../components/WordsList'
-import { useRandomValue } from '../hooks/useRandomValue'
 import { useAppSelector } from '../hooks/useRedux'
 import { getRandomNumber } from '../selectors'
 import { useGetWordsQuery } from '../store/wordsApi'

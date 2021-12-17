@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { GBimage } from './components/BGimage'
 import { Header } from './components/Header'
 import { useMobileAlert } from './hooks/useMobileAlert'
+import { useRandomValue } from './hooks/useRandomValue'
 import { MainLayout } from './layouts/MainLayout'
 import { AboutPage } from './pages/AboutPage'
 import { HomePage } from './pages/HomePage'
@@ -11,6 +12,8 @@ import './styles/index.scss'
 
 const App: React.FC<{}> = () => {
   const mobileAlert = useMobileAlert()
+
+  useRandomValue(0, 2999)
   return (
     <>
       <MainLayout>
