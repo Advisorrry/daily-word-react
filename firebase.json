@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "build",
+    "site": "dailyword-react",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
