@@ -10,7 +10,7 @@ export interface IWords {
 
 export const wordsApi = createApi({
   reducerPath: 'wordsApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://dailyword-react.web.app/' }),
   endpoints: (builder) => ({
     getWords: builder.query<IWords[], string>({
       query: () => ({
