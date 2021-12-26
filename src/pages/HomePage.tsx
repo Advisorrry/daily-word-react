@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../components/Button'
 import { WordsList } from '../components/WordsList'
 import { useAppSelector } from '../hooks/useRedux'
 import { getRandomNumber } from '../selectors'
@@ -11,6 +12,9 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <WordsList words={data} isLoading={isLoading} randomNumber={value} />
+      <div className="flex justify-end font-extrabold divide-fuchsia-300 ">
+        <Button>Next word</Button>
+      </div>
     </>
   )
 }
